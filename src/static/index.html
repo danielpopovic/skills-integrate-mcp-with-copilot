@@ -7,6 +7,31 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div id="auth-controls">
+      <button id="teacher-auth-button" type="button" aria-label="Teacher account">👤 Login</button>
+      <span id="auth-status">Student view</span>
+    </div>
+
+    <div id="login-modal" class="modal hidden" aria-hidden="true">
+      <div class="modal-content">
+        <h3>Teacher Login</h3>
+        <form id="login-form">
+          <div class="form-group">
+            <label for="teacher-username">Username:</label>
+            <input type="text" id="teacher-username" required placeholder="teacher username" />
+          </div>
+          <div class="form-group">
+            <label for="teacher-password">Password:</label>
+            <input type="password" id="teacher-password" required placeholder="password" />
+          </div>
+          <div class="modal-actions">
+            <button type="submit">Login</button>
+            <button id="close-login-modal" type="button" class="secondary-btn">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <header>
       <h1>Mergington High School</h1>
       <h2>Extracurricular Activities</h2>
